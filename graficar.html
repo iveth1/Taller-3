@@ -1,0 +1,111 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+    </style>
+    <title>Graficas</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" type="text/css" href="css/graficar.css" media="screen" />
+</head>
+<body>
+
+    <header class="header">
+        <div class="menu">
+            <nav class="nav">
+                <ul>
+                    <li><a href="calculadora.html">CALCULADORA</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="titulo">
+
+        <h1 class="title"> GRAFICAR</h1>
+    </div>
+
+    <form action="/my-handling-form-page" method="post">
+        <ul>
+            <li>
+                <label for="labels">Labels:</label>
+                <input type="text" id="labels" name="labels">
+            </li>
+            <li>
+                <label for="mail">Datos:</label>
+                <input type="number" id="datos" name="datos">
+            </li>
+
+        </ul>
+        <li class="button">
+            <button type="submit">Graficar</button>
+        </li>
+    </form>
+
+
+    <h1>Chart.js</h1>
+    <h4>Comparacion de navegadores</h4>
+    <canvas id="myChart"></canvas>
+    <br>
+    <h4>Gráfico de barras</h4>
+    <canvas id="myChart1"></canvas>
+    <br>
+    <h4>Gráfico de líneas</h4>
+    <canvas id="myChart2"></canvas>
+    <br>
+    <script src="chart.js"></script>
+    <script>
+        var ctx = document.getElementById('myChart').getContext('2d');
+        var chart = new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: [labels],
+                datasets: [{
+                   
+                    backgroundColor: '#42a5f5',
+                    borderColor: 'gray',
+                    data: []
+                }, {
+                
+                    backgroundColor: '#ffab91',
+                    borderColor: 'yellow',
+                    data: [datos]
+                }
+                ]
+            },
+            options: { responsive: true }
+        });
+        var ctx1 = document.getElementById('myChart1').getContext('2d');
+        var chart = new Chart(ctx1, {
+            type: 'line',
+            data: {
+                labels: [labels],
+                datasets: [{
+                   
+                    backgroundColor: '#42a5f5',
+                    borderColor: 'gray',
+                    data: [datos]
+                }
+                ]
+            },
+            options: {}
+        });
+        var ctx2 = document.getElementById('myChart2').getContext('2d');
+        var chart = new Chart(ctx2, {
+            type: 'doughnut',
+            data:
+            {
+                datasets: [{
+                    data: [datos],
+                    backgroundColor: ['#42a5f5', 'red', 'green', 'blue', 'violet'],
+                    label: 'Comparacion de navegadores'
+                }],
+                labels: [labels
+                ]
+            },
+            options: {}
+        });
+    </script>
+</body>
+</html>
