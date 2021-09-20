@@ -9,7 +9,7 @@
         <div class="menu">
             <nav class="nav">
                 <ul>
-                    <li><a href="calculadora.html">Graficadora</a></li>
+                    <li><a href="graficar.html">Graficadora</a></li>
                 </ul>
             </nav>
         </div>
@@ -25,35 +25,35 @@
                 <table>
                     <tr>
                         <td colspan="5">
-                            <input type="text" name="txtboxnros" value="0" disabled>
+                            <input id="caja" type="text" name="txtboxnros" value="0" disabled>
                         </td>
                     </tr>
                     <tr>
-                        <td><input type="button" value="Clean" onclick="limpiar()"></td>
-                        <td><input type="button" value="/" onclick="operacion(this.value)"></td>
-                        <td><input type="button" value="*" onclick="operacion(this.value)"></td>
+                        <td><input id="boton" type="button" value="Clean" onclick="limpiar()"></td>
+                        <td><input id="boton"type="button" value="/" onclick="operacion(this.value)"></td>
+                        <td><input id="boton"type="button" value="*" onclick="operacion(this.value)"></td>
                     </tr>
                     <tr>
-                        <td><input type="button" value="7" onclick="numero(this.value)"></td>
-                        <td><input type="button" value="8" onclick="numero(this.value)"></td>
-                        <td><input type="button" value="9" onclick="numero(this.value)"></td>
-                        <td><input type="button" value="-" onclick="operacion(this.value)"></td>
+                        <td><input id="boton"type="button" value="7" onclick="numero(this.value)"></td>
+                        <td><input id="boton"type="button" value="8" onclick="numero(this.value)"></td>
+                        <td><input id="boton"type="button" value="9" onclick="numero(this.value)"></td>
+                        <td><input id="botone"type="button" value="-" onclick="operacion(this.value)"></td>
                     </tr>
                     <tr>
-                        <td><input type="button" value="4" onclick="numero(this.value)"></td>
-                        <td><input type="button" value="5" onclick="numero(this.value)"></td>
-                        <td><input type="button" value="6" onclick="numero(this.value)"></td>
-                        <td><input type="button" value="+" onclick="operacion(this.value)"></td>
+                        <td><input id="boton"type="button" value="4" onclick="numero(this.value)"></td>
+                        <td><input id="boton"type="button" value="5" onclick="numero(this.value)"></td>
+                        <td><input id="boton"type="button" value="6" onclick="numero(this.value)"></td>
+                        <td><input id="botone"type="button" value="+" onclick="operacion(this.value)"></td>
                     </tr>
                     <tr>
-                        <td><input type="button" value="1" onclick="numero(this.value)"></td>
-                        <td><input type="button" value="2" onclick="numero(this.value)"></td>
-                        <td><input type="button" value="3" onclick="numero(this.value)"></td>
-                        <td><input type="button" value="ENTER" onclick="resultado()"></td>
+                        <td><input id="boton"type="button" value="1" onclick="numero(this.value)"></td>
+                        <td><input id="boton"type="button" value="2" onclick="numero(this.value)"></td>
+                        <td><input id="boton"type="button" value="3" onclick="numero(this.value)"></td>
+                        <td><input id="botone"type="button" value="ENTER" onclick="resultado()"></td>
                     </tr>
                     <tr>
-                        <td><input type="button" value="0" onclick="numero(this.value)"></td>
-                        <td><input type="button" value="." onclick="numero(this.value)"></td>
+                        <td><input id="boton"type="button" value="0" onclick="numero(this.value)"></td>
+                        <td><input id="boton"type="button" value="." onclick="numero(this.value)"></td>
                     </tr>
                 </table>
             </form>

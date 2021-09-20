@@ -84,4 +84,50 @@ li {
     color: white;
 }
 
+input[type=button]{
+    background-color: rgb(112, 130, 182);
+    border:none;
+    color:black;
+    font-weight: bold;
+    padding: 6px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 4px;
+    cursor: pointer;
+    box-shadow: 3px 3px 3px black;
+}
+
+input[type=text]{
+    border: solid;
+    color:rgb(2, 10, 78);
+    padding: 15px 32;
+    text-align: right;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 25px;
+    margin: 4px 2px;
+    cursor: pointer;
+    width: 98%;
+    height: 50%;
+    box-shadow: 3px 3px 3px black;
+}
+#caja{
+    height: 50px;
+    
+}
+
+#boton{
+    width: 80px;
+    height: 50px;
+   
+}
+#botone{
+    width: 90px;
+    height: 50px;
+    
+}
+
+
 
